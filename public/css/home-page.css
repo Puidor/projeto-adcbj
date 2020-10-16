@@ -1,0 +1,245 @@
+#home-page {
+  display: flex;
+
+  min-height: 100vh;
+}
+/* ######### HEADER ######### */
+header {
+  margin: auto;
+  width: min(90%, 112rem);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+#logo {
+  width: 10rem;
+}
+#logo img {
+  width: 100%;
+}
+
+.header-menu ul {
+  list-style-type: none;
+}
+
+.header-menu ul li {
+  color: #e2541c;
+  font-weight: 700;
+  font-size: 1.6rem;
+
+  margin-top: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.header-menu ul li:hover {
+  opacity: 0.6;
+}
+
+/* ################################### */
+/* ######### PRESENTATION ######### */
+/* ################################### */
+
+#presentation {
+  background: url(../images/home-presentation.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: rgb(250, 250, 250);
+  width: 100vw;
+  padding: 1rem 1rem;
+  text-align: center;
+}
+
+#presentation h1 {
+  font-size: clamp(4rem, 5vw, 5.8rem);
+  margin-top: 5rem;
+}
+
+#presentation h6 {
+  font-size: clamp(1.6rem, 2vw, 2.4rem);
+  margin-top: 2rem;
+}
+
+#presentation .btn-presentation {
+  width: 30rem;
+  height: 5rem;
+  background: #e2541c;
+
+  border: none;
+  border-radius: 3rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: auto;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  transition: ease;
+  transition: 0.2s;
+}
+
+#presentation .btn-presentation:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+/* ################################### */
+/* ######### PROJETOS ######### */
+/* ################################### */
+#home-projetos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 6rem;
+}
+
+#home-projetos h1 {
+  color: #e2541c;
+  font-size: clamp(4rem, 5vw, 5.8rem);
+  font-family: "Anton", sans-serif;
+
+  border-bottom: 1px solid #e2541c;
+
+  width: 90%;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+.section-projetos {
+  margin-bottom: 4rem;
+  width: 100vw;
+}
+
+.section-projetos img {
+  width: 100%;
+}
+
+.text-projetos {
+  margin: 5rem auto;
+  padding-left: 1rem;
+  width: 90%;
+  border-left: 5px solid #e2541c;
+}
+.text-projetos h3 {
+  color: #e2541c;
+  margin-bottom: 1rem;
+}
+
+/* ################################### */
+/* ######### FOOTER ######### */
+/* ################################### */
+
+footer {
+  background-color: hsl(216, 53%, 9%);
+  color: #e2541c;
+  padding: 5rem;
+}
+.footer-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+.footer-2 {
+  display: flex;
+  justify-content: center;
+}
+.footer-2 .logo-icons {
+  padding: 1rem;
+  border: 1px solid #e2541c;
+  border-radius: 50%;
+  margin-left: 1rem;
+  transition: ease;
+  transition: 0.2s;
+}
+.footer-2 .logo-icons:hover {
+  cursor: pointer;
+  color: white;
+  border: 1px solid white;
+  transform: scale(1.1);
+}
+.footer-1 p,
+.footer-1 div {
+  margin-top: 2rem;
+}
+/* ################################### */
+/* ######### Desktop Version ######### */
+/* ################################### */
+
+@media (min-width: 760px) {
+  .header-menu ul li {
+    display: inline;
+  }
+  /* ################################### */
+  /* ######### PRESENTATION ######### */
+  /* ################################### */
+  #presentation {
+    padding: 2rem 5rem;
+  }
+
+  #presentation h1,
+  #presentation h6 {
+    height: initial;
+    text-align: initial;
+    margin-top: 5rem;
+  }
+  #presentation .btn-presentation {
+    margin: initial;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+  #presentation h1 {
+    font-weight: bold;
+    line-height: 0.88;
+    width: min(60rem, 80%);
+  }
+
+  #presentation h6 {
+    font-size: 2.4rem;
+    line-height: 1.5;
+    width: 60vh;
+  }
+  /* ################################### */
+  /* ######### PROJETOS ######### */
+  /* ################################### */
+  .section-projetos {
+    display: flex;
+    align-items: center;
+    width: 90vw;
+    border-bottom: 2px solid #e2541c;
+  }
+
+  .text-projetos {
+    width: 90%;
+  }
+
+  .text-projetos {
+    margin-right: 7rem;
+    width: 50%;
+  }
+
+  .section-projetos img {
+    border-bottom: 5px solid #e2541c;
+    width: 50%;
+  }
+  /* ################################### */
+  /* ######### FOOTER ######### */
+  /* ################################### */
+  footer {
+    background-color: hsl(216, 53%, 9%);
+    color: #e2541c;
+    padding: 5rem;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+  }
+}
