@@ -1,6 +1,5 @@
 #home-page {
   display: flex;
-  width: 100vw;
   min-height: 100vh;
 }
 /* ######### HEADER ######### */
@@ -68,7 +67,7 @@ header {
 #presentation .btn-presentation {
   width: 30rem;
   height: 5rem;
-  /* background: #e2541c; */
+  background: #e2541c;
 
   border: none;
   border-radius: 3rem;
@@ -203,7 +202,7 @@ footer {
   #presentation h6 {
     font-size: 2.4rem;
     line-height: 1.5;
-    width: 60vh;
+    width: min(60rem, 80%);
   }
   /* ################################### */
   /* ######### PROJETOS ######### */
