@@ -22,3 +22,8 @@ a {
   font: 600 1.8rem/1 "Roboto", sans-serif;
   color: white;
 }
+a:hover {
+  text-decoration: none;
+  font: 600 1.8rem/1 "Roboto", sans-serif;
+  color: white;
+}

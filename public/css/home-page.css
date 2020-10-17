@@ -6,9 +6,12 @@
 header {
   margin: auto;
   width: min(90%, 112rem);
+
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  flex-direction: column;
   justify-content: space-between;
+
   padding: 1rem;
 }
 #logo {
@@ -18,11 +21,41 @@ header {
   width: 100%;
 }
 
+.toggle-button {
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 4rem;
+  height: 3rem;
+}
+
+.toggle-button .bar {
+  height: 0.5rem;
+  width: 100%;
+  background-color: #e2541c;
+  border-radius: 1rem;
+}
+.header-menu {
+  width: 100%;
+  display: none;
+}
+
 .header-menu ul {
+  width: 100%;
   list-style-type: none;
+}
+.header-menu.active {
+  display: flex;
 }
 
 .header-menu ul li {
+  margin-top: 3rem;
+  text-align: center;
+}
+.header-menu ul li a {
   color: #e2541c;
   font-weight: 700;
   font-size: 1.6rem;
@@ -35,7 +68,7 @@ header {
   transition: 0.1s;
 }
 
-.header-menu ul li:hover {
+.header-menu ul li a:hover {
   opacity: 0.6;
 }
 
@@ -172,8 +205,22 @@ footer {
 /* ################################### */
 
 @media (min-width: 760px) {
+  header {
+    align-items: center;
+    flex-direction: initial;
+  }
+  .header-menu {
+    width: initial;
+    display: initial;
+  }
+  .header-menu ul {
+    display: initial;
+  }
   .header-menu ul li {
     display: inline;
+  }
+  .toggle-button {
+    display: none;
   }
   /* ################################### */
   /* ######### PRESENTATION ######### */
