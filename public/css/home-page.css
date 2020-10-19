@@ -264,10 +264,6 @@ footer {
     margin-top: 5rem;
   }
 
-  .presentation-content.center-content {
-    align-items: flex-end;
-  }
-
   #presentation .btn-presentation {
     margin: initial;
     margin-top: 5rem;
