@@ -77,16 +77,14 @@ header {
 /* ################################### */
 
 #presentation {
-  background: url(../images/home-presentation.webp);
+  background: url(../images/home-presentation-01.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 
   color: rgb(250, 250, 250);
 
-  height: 100vh;
   width: 100vw;
-
   text-align: center;
 }
 
@@ -95,13 +93,11 @@ header {
   flex-direction: column;
   justify-content: space-between;
 
-  height: 100%;
-
   padding: 2rem;
 }
 
 #presentation.slide-1 {
-  background: url(../images/home-presentation-02.webp);
+  background: url(../images/home-presentation.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -125,7 +121,6 @@ header {
   /* padding: 1rem;
   border-radius: 1.5rem;
   background-color: rgba(155, 135, 127, 0.6); */
-  margin-top: 2rem;
 }
 
 #presentation .btn-presentation {
@@ -262,7 +257,6 @@ footer {
 
   #presentation h1,
   #presentation h6 {
-    height: initial;
     text-align: initial;
     margin-top: 5rem;
   }
@@ -319,11 +313,5 @@ footer {
     margin-top: 50px;
     align-items: center;
     justify-content: center;
-  }
-}
-
-@media (min-width: 1080px) {
-  #presentation {
-    height: 60vh;
   }
 }
