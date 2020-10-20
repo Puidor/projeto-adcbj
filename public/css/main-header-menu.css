@@ -1,0 +1,98 @@
+/* ######### HEADER ######### */
+header {
+  margin: auto;
+  width: min(90%, 112rem);
+
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 1rem;
+}
+#logo {
+  width: 10rem;
+}
+#logo img {
+  width: 100%;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 4rem;
+  height: 3rem;
+}
+
+.toggle-button .bar {
+  height: 0.5rem;
+  width: 100%;
+  background-color: #e2541c;
+  border-radius: 1rem;
+}
+.header-menu {
+  width: 100%;
+  display: none;
+}
+
+.header-menu ul {
+  width: 100%;
+  list-style-type: none;
+}
+.header-menu.active {
+  display: flex;
+}
+
+.header-menu ul li {
+  margin-top: 3rem;
+  text-align: center;
+}
+.header-menu ul li a {
+  color: #e2541c;
+  font-weight: 700;
+  font-size: 1.6rem;
+
+  margin-top: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.header-menu ul li a:hover {
+  opacity: 0.6;
+  color: #06b1cf;
+}
+
+.header-menu ul .header-menu-active a {
+  color: #06b1cf;
+}
+
+/* ################################### */
+/* ######### Desktop Version ######### */
+/* ################################### */
+
+@media (min-width: 760px) {
+  header {
+    align-items: center;
+    flex-direction: initial;
+  }
+  .header-menu {
+    width: initial;
+    display: initial;
+  }
+  .header-menu ul {
+    display: initial;
+  }
+  .header-menu ul li {
+    display: inline;
+  }
+  .toggle-button {
+    display: none;
+  }
+}

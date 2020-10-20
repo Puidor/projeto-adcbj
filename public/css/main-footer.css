@@ -1,0 +1,58 @@
+/* ################################### */
+/* ######### FOOTER ######### */
+/* ################################### */
+
+footer {
+  background-color: hsl(216, 53%, 9%);
+  color: #e2541c;
+  padding: 5rem;
+}
+.footer-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+.footer-2 {
+  display: flex;
+  justify-content: center;
+}
+.footer-2 .logo-icons {
+  padding: 1rem;
+  border: 1px solid #e2541c;
+  border-radius: 50%;
+  margin-left: 1rem;
+  transition: ease;
+  transition: 0.2s;
+}
+.footer-2 .logo-icons:hover {
+  cursor: pointer;
+  color: white;
+  border: 1px solid white;
+  transform: scale(1.1);
+}
+.footer-1 p,
+.footer-1 div {
+  margin-top: 2rem;
+}
+
+/* ################################### */
+/* ######### Desktop Version ######### */
+/* ################################### */
+
+@media (min-width: 760px) {
+  /* ################################### */
+  /* ######### FOOTER ######### */
+  /* ################################### */
+  footer {
+    background-color: hsl(216, 53%, 9%);
+    color: #e2541c;
+    padding: 5rem;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+  }
+}

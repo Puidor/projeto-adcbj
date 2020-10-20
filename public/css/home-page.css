@@ -2,75 +2,6 @@
   display: flex;
   min-height: 100vh;
 }
-/* ######### HEADER ######### */
-header {
-  margin: auto;
-  width: min(90%, 112rem);
-
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  justify-content: space-between;
-
-  padding: 1rem;
-}
-#logo {
-  width: 10rem;
-}
-#logo img {
-  width: 100%;
-}
-
-.toggle-button {
-  position: absolute;
-  top: 3rem;
-  right: 3rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 4rem;
-  height: 3rem;
-}
-
-.toggle-button .bar {
-  height: 0.5rem;
-  width: 100%;
-  background-color: #e2541c;
-  border-radius: 1rem;
-}
-.header-menu {
-  width: 100%;
-  display: none;
-}
-
-.header-menu ul {
-  width: 100%;
-  list-style-type: none;
-}
-.header-menu.active {
-  display: flex;
-}
-
-.header-menu ul li {
-  margin-top: 3rem;
-  text-align: center;
-}
-.header-menu ul li a {
-  color: #e2541c;
-  font-weight: 700;
-  font-size: 1.6rem;
-
-  margin-top: 1rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
-
-  cursor: pointer;
-  transition: 0.1s;
-}
-
-.header-menu ul li a:hover {
-  opacity: 0.6;
-}
 
 /* ################################### */
 /* ######### PRESENTATION ######### */
@@ -189,65 +120,34 @@ header {
   margin-bottom: 1rem;
 }
 
-/* ################################### */
-/* ######### FOOTER ######### */
-/* ################################### */
+.btn-projetos {
+  font: 400 1.8rem/1 "Roboto", sans-serif;
 
-footer {
-  background-color: hsl(216, 53%, 9%);
-  color: #e2541c;
-  padding: 5rem;
-}
-.footer-1 {
+  width: 12rem;
+  height: 4rem;
+  background: #e2541c;
+
+  border: none;
+  border-radius: 3rem;
+  box-shadow: 1px 1px 2px #e2541c;
+
   display: flex;
-  flex-direction: column;
   align-items: center;
-  margin-bottom: 5rem;
-}
-.footer-2 {
-  display: flex;
   justify-content: center;
-}
-.footer-2 .logo-icons {
-  padding: 1rem;
-  border: 1px solid #e2541c;
-  border-radius: 50%;
-  margin-left: 1rem;
+
   transition: ease;
   transition: 0.2s;
 }
-.footer-2 .logo-icons:hover {
-  cursor: pointer;
-  color: white;
-  border: 1px solid white;
-  transform: scale(1.1);
-}
-.footer-1 p,
-.footer-1 div {
-  margin-top: 2rem;
+
+.btn-projetos:hover {
+  font: 400 1.8rem/1 "Roboto", sans-serif;
+  opacity: 0.8;
 }
 /* ################################### */
 /* ######### Desktop Version ######### */
 /* ################################### */
 
 @media (min-width: 760px) {
-  header {
-    align-items: center;
-    flex-direction: initial;
-  }
-  .header-menu {
-    width: initial;
-    display: initial;
-  }
-  .header-menu ul {
-    display: initial;
-  }
-  .header-menu ul li {
-    display: inline;
-  }
-  .toggle-button {
-    display: none;
-  }
   /* ################################### */
   /* ######### PRESENTATION ######### */
   /* ################################### */
@@ -299,19 +199,5 @@ footer {
   .section-projetos img {
     border-bottom: 5px solid #e2541c;
     width: 50%;
-  }
-  /* ################################### */
-  /* ######### FOOTER ######### */
-  /* ################################### */
-  footer {
-    background-color: hsl(216, 53%, 9%);
-    color: #e2541c;
-    padding: 5rem;
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(3, 1fr);
-    margin-top: 50px;
-    align-items: center;
-    justify-content: center;
   }
 }
