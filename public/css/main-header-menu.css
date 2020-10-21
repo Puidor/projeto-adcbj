@@ -10,6 +10,8 @@ header {
 
   padding: 1rem;
 }
+
+/* LOGO + TOGGLE BUTTON */
 #logo {
   width: 10rem;
 }
@@ -34,17 +36,20 @@ header {
   background-color: #e2541c;
   border-radius: 1rem;
 }
+
 .header-menu {
   width: 100%;
   display: none;
 }
 
+/* MENU LIST */
 .header-menu ul {
   width: 100%;
   list-style-type: none;
 }
 .header-menu.active {
   display: flex;
+  flex-direction: column;
 }
 
 .header-menu ul li {
@@ -73,6 +78,48 @@ header {
   color: #06b1cf;
 }
 
+/* FORM PESQUISAR */
+
+#header-form {
+  display: flex;
+  justify-content: center;
+
+  width: 80%;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+#header-form input {
+  font: 400 1.8rem/1 "Roboto", sans-serif;
+  color: #574d49;
+
+  background: none;
+
+  border: 1px solid #f3f3f4;
+  box-shadow: 1px 1px 1px #f3f3f4;
+  border-right: none;
+
+  padding: 0.5rem;
+}
+
+#header-form button {
+  background: none;
+
+  border: none;
+  border: 1px solid #f3f3f4;
+  box-shadow: 1px 1px 1px #f3f3f4;
+
+  padding: 0.5rem 2rem 0.1em 2rem;
+  cursor: pointer;
+}
+
+#header-form button:hover {
+  opacity: 0.7;
+}
+
+.search-icons {
+  color: #e2541c;
+}
 /* ################################### */
 /* ######### Desktop Version ######### */
 /* ################################### */
@@ -80,14 +127,44 @@ header {
 @media (min-width: 760px) {
   header {
     align-items: center;
+    justify-content: space-between;
+    flex-direction: initial;
+
+    width: 90%;
+  }
+
+  .header-menu {
+    display: flex;
+    align-items: center;
+
+    width: initial;
+
+    padding: 0;
+    margin: 0;
+  }
+
+  .header-menu.active {
+    display: flex;
     flex-direction: initial;
   }
-  .header-menu {
+
+  #header-form {
+    margin-top: 0;
+    margin-left: 2rem;
     width: initial;
-    display: initial;
   }
+
+  #header-form input {
+    width: 12rem;
+  }
+
+  #header-form button {
+    width: initial;
+  }
+
   .header-menu ul {
     display: initial;
+    margin: 0;
   }
   .header-menu ul li {
     display: inline;
