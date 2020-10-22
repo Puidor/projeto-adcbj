@@ -101,7 +101,10 @@ header {
 
   padding: 0.5rem;
 }
-
+#header-form input:focus,
+#header-form button:focus {
+  outline: none;
+}
 #header-form button {
   background: none;
 
