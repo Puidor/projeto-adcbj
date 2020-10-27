@@ -78,6 +78,14 @@
   opacity: 0.8;
 }
 
+.carousel-control-prev .logo-icons,
+.carousel-control-next .logo-icons {
+  font-size: 4rem;
+  color: #e2541c;
+
+  margin-left: 1rem;
+}
+
 /* ################################### */
 /* ######### PROJETOS ######### */
 /* ################################### */
@@ -240,6 +248,7 @@ hr {
     line-height: 1.5;
     width: min(60rem, 80%);
   }
+
   /* ################################### */
   /* ######### PROJETOS ######### */
   /* ################################### */
